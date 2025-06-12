@@ -333,7 +333,8 @@ body{
 	right: 0;
 	bottom: 0;
 	z-index: 1000;
-	background-color: var(--accent-color);
+	/* background-color: var(--accent-color); */
+	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -353,7 +354,7 @@ body{
 
 .loading{
 	border: 1px solid transparent;
-	border-color: transparent var(--white-color) transparent var(--white-color);
+	border-color: transparent var(--accent-color) transparent var(--accent-color);
 	animation: rotate-loading 1.5s linear 0s infinite normal;
 	transform-origin: 50% 50%;
 }
