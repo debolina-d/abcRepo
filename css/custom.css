@@ -1240,6 +1240,7 @@ header.main-header .header-sticky.active{
 	text-transform: capitalize;
 }
 
+
 .service-item .service-footer a{
 	background: var(--secondary-color);
 	border-radius: 8px;
@@ -3023,6 +3024,9 @@ header.main-header .header-sticky.active{
 }
 
 .page-services .service-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	border: 1px solid var(--divider-color);
 	border-radius: 40px;
 	height: calc(100% - 30px);
