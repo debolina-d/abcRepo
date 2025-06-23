@@ -6411,3 +6411,10 @@ header.main-header .header-sticky.active{
         height: 350px;
     }
 }
+
+/* navbar color off-white in mobile view */
+@media (max-width: 991px) {
+  .main-header .navbar {
+    background-color: #f8f8f8 !important;
+  }
+}
