@@ -865,7 +865,7 @@ header.main-header .header-sticky.active{
 .hero{
 	padding: 150px 0 40px;
 	position: relative;
-	background: url('../images/hero-bg1.png') no-repeat;
+	/* background: url('../images/hero-bg1.png') no-repeat; */
 	background-position: center center;
 	background-size: cover;
 }
@@ -2089,6 +2089,25 @@ header.main-header .header-sticky.active{
 .testimonial-company-slider .company-logo img{
 	width: 100%;
 	max-height: 40px;
+}
+
+.company-logo .company-name {
+    display: inline-block;
+    font-size: 1.2rem;           /* Make it large like a logo */
+    font-weight: bold;           /* Bold for logo feel */
+    color: #0d0a0a;                 /* Match your logo color, or use #000 for black */
+    letter-spacing: 1px;         /* Slight spacing for logo effect */
+    text-transform: uppercase;   /* Optional: makes all caps like many logos */
+    background: none;            /* Remove background if you want it transparent */
+    padding: 0 10px;             /* Some horizontal padding */
+    min-width: 100px;            /* Ensures a minimum width */
+    min-height: 20px;            /* Ensures a minimum height */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;           /* Vertically center text */
+    /* Remove box-shadow and border if you want it to blend in */
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.04); */
+    /* border-radius: 8px; */
 }
 
 /************************************/
