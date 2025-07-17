@@ -2100,20 +2100,32 @@ header.main-header .header-sticky.active{
     color: #222;
     background: #fff;
     border-radius: 12px;
-    padding: 18px 28px;
-    min-width: 160px;
-    min-height: 60px;
+    width: 220px;         /* Fixed width for all badges */
+    height: 90px;         /* Fixed height for all badges */
     text-align: center;
-    /* box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    border: 1px solid #eee; */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border: 1px solid #eee;
     margin: 0 auto;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding: 0 10px;      /* Padding for inner spacing */
+    word-break: break-word; /* Allow long words to wrap */
     transition: box-shadow 0.2s;
 }
+
 .company-logo .company-name:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     border-color: #ccc;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    .company-logo .company-name {
+        width: 160px;
+        height: 90px;
+        font-size: 0.95rem;
+        padding: 0 5px;
+    }
 }
 
 /************************************/
@@ -4815,6 +4827,14 @@ header.main-header .header-sticky.active{
 		width: 20px;
 		height: 20px;
 	}
+
+	@media only screen and (max-width: 991px) {
+		.excellence-innovating-list {
+		  margin-bottom: 40px; /* Move up, adjust value as needed */
+		  position: relative;
+		  z-index: 2;
+		}
+	  }
 
 	.about-us{
 		padding: 50px 0;
