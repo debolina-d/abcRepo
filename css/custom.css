@@ -2319,12 +2319,11 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .main-footer{
-	/* background: url(../images/footer-bg.svg), var(--primary-color); */
-	background: url(../images/footer-bg.svg), #444444;
+    background: url(../images/footer-bg.svg), #444444;
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: auto;
-	padding: 100px 0 0;
+    padding: 100px 0 0;
 }
 
 .footer-header{
@@ -6564,5 +6563,22 @@ header.main-header .header-sticky.active{
 @media (max-width: 991px) {
   .main-header .navbar {
     background-color: #f8f8f8 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-logo img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .main-footer {
+    background: url(../images/footer-bg.svg), #444444;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
+    padding: 100px 0 0;
   }
 }
