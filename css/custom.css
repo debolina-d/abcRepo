@@ -2319,7 +2319,8 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .main-footer{
-	background: url(../images/footer-bg.svg), var(--primary-color);
+	/* background: url(../images/footer-bg.svg), var(--primary-color); */
+	background: url(../images/footer-bg.svg), #444444;
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: auto;
@@ -2357,8 +2358,12 @@ header.main-header .header-sticky.active{
 	margin-bottom: 10px;
 }
 
-.footer-logo img{
-	max-width: 180px;
+.footer-logo img {
+    max-width: 260px;   /* or 300px, adjust as needed */
+    width: 100%;        /* ensures it scales responsively */
+    height: auto;       /* keeps aspect ratio */
+    display: block;
+    margin: 0 auto;
 }
 
 .about-footer-content{
