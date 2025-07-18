@@ -2088,7 +2088,8 @@ header.main-header .header-sticky.active{
 
 .testimonial-company-slider .company-logo img{
 	width: 100%;
-	max-height: 70px;
+	height: 80px;      /* or larger, adjust as needed */
+  	min-height: 80px;
 }
 
 .company-logo .company-name {
@@ -2128,10 +2129,87 @@ header.main-header .header-sticky.active{
     }
 }
 
+/* 4th Logo: Longowal - shift down */
+.longowal-logo img {
+	padding-left: 10px; 
+  }
+  
+  /* 6th Logo: Jain Agro - increase height, decrease width */
+  .jainagro-logo img {
+	width: 100px !important;
+	height: 120px !important;
+	object-fit: contain;
+	padding-bottom: 30px !important;
+	/* align-items: flex-end !important; */
+  }
+  
+  /* 7th Logo: Lotus - decrease width, increase height */
+  .lotus-logo img {
+	width: 150px !important;
+	height: 160px !important;
+	object-fit: contain;
+	padding-bottom: 60px !important;
+  }
+  
+  /* 8th Logo: Agro Bharati - decrease width, increase height */
+  .agrobharati-logo img {
+	width: 200px !important;
+	height: 200px !important;
+	padding-bottom: 60px !important;
+	object-fit: contain;
+  }
+  
+  /* 9th Logo: Chakraborty - decrease width, increase height */
+  .chakraborty-logo img {
+	width: 150px !important;
+	height: 160px !important;
+	object-fit: contain;
+	padding-bottom: 50px !important;
+  }
+  
+  /* 10th Logo: Sharma Exports - shift down */
+  /* .sharmaexports-logo img {
+	margin-top: 20px; 
+  } */
+
 /************************************/
 /***       13. Our Blog css       ***/
 /************************************/
+.hero-bg-video {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
 
+.hero-bg-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%) scale(1.2); /* Increase scale to crop more */
+    object-fit: cover;
+    object-position: center;
+    background: #000;
+}
+.hero {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0 !important;
+    overflow: hidden;
+    background: #000;
+}
+@media (max-width: 600px) {
+	.hero-bg-video video {
+	  transform: translate(-50%, -50%) scale(1.35); /* Increase scale for mobile */
+	}
+  }
 .our-blog{
 	padding: 100px 0 70px;
 }
