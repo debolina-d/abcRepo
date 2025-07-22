@@ -244,6 +244,7 @@
 	}
 
 	/* Zoom Gallery screenshot */
+	/*
 	$('.gallery-items').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -264,6 +265,7 @@
 			}
 		}
 	});
+	*/
 
 	/* Contact form validation */
 	var $contactform = $("#contactForm");
