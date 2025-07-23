@@ -6582,3 +6582,10 @@ header.main-header .header-sticky.active{
     padding: 100px 0 0;
   }
 }
+
+@media (max-width: 767px) {
+  .what-we-do .row.no-gutters {
+    flex-direction: column-reverse !important;
+    display: flex;
+  }
+}
